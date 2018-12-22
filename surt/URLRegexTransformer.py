@@ -28,8 +28,8 @@ import re
 # stripPathSessionID
 #_______________________________________________________________________________
 _RES_PATH_SESSIONID = [
-    re.compile(b"^(.*/)(\((?:[a-z]\([0-9a-z]{24}\))+\)/)([^\?]+\.aspx.*)$", re.I),
-    re.compile(b"^(.*/)(\\([0-9a-z]{24}\\)/)([^\\?]+\\.aspx.*)$", re.I),
+    re.compile(br"^(.*/)(\((?:[a-z]\([0-9a-z]{24}\))+\)/)([^\?]+\.aspx.*)$", re.I),
+    re.compile(br"^(.*/)(\([0-9a-z]{24}\)/)([^\?]+\.aspx.*)$", re.I),
     ]
 
 def stripPathSessionID(path):
